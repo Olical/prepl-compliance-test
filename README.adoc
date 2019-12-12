@@ -1,0 +1,38 @@
+= prepl compliance test (work in progress 2019-12-12)
+
+A test suite to check a given https://clojure.org/[Clojure] prepl server for compliance as I've defined in https://oli.me.uk/clojure-prepl-for-tool-authors/[Clojure prepl for tool authors].
+
+== Installation
+
+The easiest way to use this tool for now is to clone the repository and execute it from the source. You _could_ refer to it as a git dependency in your `deps.edn` and execute `prepl-compliance-test.main/-main` but that seems kind of unnecessary to me.
+
+== Usage
+
+Start the prepl server you wish to check, you could start one for Clojure or ClojureScript quite easily with https://github.com/Olical/propel[Propel]. Refer to https://oli.me.uk/repling-into-projects-with-prepl-and-propel/[REPLing into projects with prepl and Propel] for more information of starting prepls of various kinds.
+
+You can start a baseline example server by executing `scripts/baseline.sh`. This is a regular Clojure prepl server but it'll serve as a decent example.
+
+Once that's up we can execute the test suite against it like so:
+
+[source,sh]
+----
+scripts/run.sh localhost 33945
+----
+
+Where `33945` is the port the baseline server was started on. Change these arguments to whatever you've configured for your prepl server.
+
+== Development
+
+If you'd like to add more tests to this suite (please do!) you can start the development prepl with `scripts/dev.sh`, I then connect to this with my own https://neovim.io/[Neovim] tooling, https://github.com/Olical/conjure[Conjure].
+
+You could also just run `scripts/run.sh` repeatedly until you have the desired result. If you wish to use nREPL to develop this project, feel free to add the configuration required. I haven't added it because I don't use nREPL based tooling but I have nothing against it being added.
+
+== Unlicenced
+
+Find the full http://unlicense.org/[unlicense] in the `UNLICENSE` file, but here's a snippet.
+
+____
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means.
+____
