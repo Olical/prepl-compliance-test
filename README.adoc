@@ -1,5 +1,9 @@
 = prepl compliance test
 
+____
+This project is still in early development, feel free to contribute more tests! It's usable in it's current state but is pretty unforgiving, the tests need to be tweaked to make them a little more leniant on some things I think, I'll see.
+____
+
 A test suite to check a given https://clojure.org/[Clojure] prepl server for compliance as I've defined in https://oli.me.uk/clojure-prepl-for-tool-authors/[Clojure prepl for tool authors].
 
 == Why?
