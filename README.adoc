@@ -1,4 +1,4 @@
-= prepl compliance test (work in progress 2019-12-12)
+= prepl compliance test
 
 A test suite to check a given https://clojure.org/[Clojure] prepl server for compliance as I've defined in https://oli.me.uk/clojure-prepl-for-tool-authors/[Clojure prepl for tool authors].
 
