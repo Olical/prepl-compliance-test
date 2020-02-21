@@ -8,9 +8,9 @@ A test suite to check a given https://clojure.org/[Clojure] prepl server for com
 
 == Why?
 
-Tool authors are beginning to add prepl servers to their projects (https://github.com/thheller/shadow-cljs/issues/508[shadow-cljs!]) but it's not a documented technology and it's full of small nuances. I've been hacking on prepls for well over a year now (I think?) so I'm trying to capture that knowledge in a program that others can use to catch inconsistencies before they become bugs.
+Tool authors are beginning to add prepl servers to their projects (https://github.com/thheller/shadow-cljs/issues/508[shadow-cljs!]) but it's not a documented technology and it's full of small nuances. I've been hacking on prepls for well over a year now so I'm trying to capture that knowledge in a program that others can use to catch inconsistencies before they become issues raised by your users.
 
-My goal for this project is to provide an easy way for someone implementing a prepl server to check that they're in line with all of the other implementations. That isn't to say even the official prepl servers from Clojure and ClojureScript are 100% correct yet, there's even inconsistencies there! This framework will hopefully give is ammunition to talk about these issues though and show when an issue has been fixed by patches to core or various third party tools.
+My goal for this project is to provide an easy way for someone implementing a prepl server to check that they're in line with all of the other implementations. That isn't to say even the official prepl servers from Clojure and ClojureScript are 100% correct yet, there's even inconsistencies there! This framework will hopefully give us a good starting point for talking about and improving prepls in the Clojure world.
 
 These tests are the _ideal_ scenario, it'll take a while for us all to get there.
 
